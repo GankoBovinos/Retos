@@ -1,0 +1,15 @@
+.centro{
+	text-align: center;
+}
+.espacioinput{
+	margin-bottom: 1em;
+}
+body{
+	background: -webkit-linear-gradient(90deg, blue 10%, white 90%);
+	background: -moz-linear-gradient(90deg, orange 10%, pink 90%);
+	background: -ms-linear-gradient(90deg, yellow 10%, orange 90%);
+	/*background: -o-linear-gradient(90deg, yellow 10%, orange 90%);
+	background: linear-gradient(90deg, yellow 10%, orange 90%);
+	
+	/*background-image:url(https://www.vtactual.com/es/wp-content/uploads/2017/01/TEPUY-9.jpg);*/
+}

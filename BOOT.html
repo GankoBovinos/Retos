@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Ejercicios</title>
+</head>
+<body>
+	<div class="container-fluid">		
+			<h1 class="centro"> Punto 1. Puntuaciones Estudiantes</h1>		
+			<div class="row col-sm-12"><h2>Ingrese Notas del Estudiante</h2></div>
+			<div class="row">
+				<div class="col-sm-3">
+					<input class="form-control col-sm-12" type="text" id="Nota1" placeholder="Nota1">
+				</div>
+				<div class="col-sm-3">
+					<input class="form-control col-sm-12" type="text" id="Nota2" placeholder="Nota2">
+				</div>
+				<div class="col-sm-3">
+					<input class="form-control col-sm-12" type="text" id="Nota3" placeholder="Nota3">
+				</div>
+				<div class="col-sm-3">
+					<input class="form-control col-sm-12 espacioinput" type="text" id="Nota4" placeholder="Nota4">
+				</div>
+			</div>
+			<button id="guardar" class="btn btn-primary"> Calcular Nota </button>
+			<button id="limpiar" class="btn btn-primary" onclick="limpiar()">Limpiar</button>
+
+	<div class="row">
+		<div class="col-sm-6">			
+			<h3>La Nota del Curso es:</h3>
+			<input type="text" id="Promedio" class="form-control" value="" readonly="readonly">			
+		</div>
+		<div class="col-sm-6">			
+			<h3>Su Puntuación es:</h3>
+			<input type="text" id="Puntaje" class="form-control" value="" readonly="readonly">			
+		</div>	
+	</div>
+	
+<h1 class="centro"> Punto 2. Fuerza de Atracción</h1>
+
+<h2> Ingrese las masas de los cuerpos</h2>
+<div class="row">
+<div class="col-sm-6">
+	<div class="row">
+	<div class="col-sm-6">
+		<input type="text" id="Masa1" class="form-control col-sm-12" placeholder="Masa1">
+	</div>
+	<div class="col-sm-6">
+		<input type="text" id="Masa2" class="form-control col-sm-12" placeholder="Masa2">
+	</div>
+	</div>
+</div>
+</div>
+
+<h2> Ingrese la Distancia</h2>
+
+<input type="text" id="Distancia" class="form-control espacioinput" placeholder="Distancia">
+
+<button id="guardar2" class="btn btn-primary"> Calcular Fuerza Gravitacional </button>
+<br>
+<h2> El Resultado es:</h2>
+<label for="Dinas"></label>
+<input type="text" id="Dina" class="form-control">
+
+<h1 class="centro"> Punto 3. Cantidad de energía producida</h1>
+<div class="row">
+	<div class="col-sm-6">
+		<h2> Ingrese la masa del cuerpo</h2>
+		<input type="text form-control" id="Masa3" class="col-sm-12">		
+	</div>
+	<div class="col-sm-6">
+		<h2> El Resultado es:</h2>
+		<!--<label for="ergios"></label>-->
+		<input type="text" id="Energia" class="col-sm-12 espacioinput">
+	</div>
+</div>
+<button id="guardar3" class="btn btn-primary"> Calcular Energía producida</button>
+
+
+<h1 class="centro"> Punto 4. Calculando la hipotenusa</h1>
+<div class="row">
+	<div class="col-sm-6">
+		<h2> Ingrese lado a</h2>
+		<input type="text" id="ladoa" class="form-control">
+	</div>
+	<div class="col-sm-6">
+		<h2> Ingrese lado b</h2>
+		<input type="text" id="ladob" class="form-control espacioinput">
+	</div>
+</div>
+<button id="guardar4" class="btn btn-primary"> Calcular la hipotenusa </button>
+<h2> El Resultado es:</h2>
+<input type="text" id="hipotenusa" class="form-control">
+
+<h1 class="centro"> Punto 5. Calculando el área de un Triangulo</h1>
+<div class="row">
+	<div class="col-sm-4">
+		<h2> Ingrese lado a</h2>
+		<input type="text" id="lado1" class="form-control">
+	</div>
+	<div class="col-sm-4">
+		<h2> Ingrese lado b</h2>
+		<input type="text" id="lado2" class="form-control">
+	</div>
+	<div class="col-sm-4">
+		<h2> Ingrese lado c</h2>
+		<input type="text" id="lado3" class="form-control">
+	</div>
+</div>
+<h2> El Resultado es:</h2>
+<input type="text" id="areat" class="form-control espacioinput">
+<button id="guardar5" class="btn btn-primary"> Calcular el Ärea </button>
+<br>
+<br>
+<h1 class="centro">Convertir formato hora</h1>
+<h2>Ingresa hora</h2>
+<input type="text" id="time" class="form-control espacioinput" maxlength="5">
+<button id="calHora" class="btn btn-primary" onclick="convertirHora()">Convertir hora</button>
+<h2> El Resultado es:</h2>
+<input type="text" id="resultTime" class="col-sm-12 espacioinput">
+<h1 class="centro">Convertir formato fecha</h1>
+<h2>Ingresa fecha en formato DD/MM/AA</h2>
+<input type="text" id="date" class="form-control espacioinput">
+<button id="calDate" class="btn btn-primary" onclick="convertirFecha()">Convertir fecha</button>
+
+<h1 class="centro">Datos circulo</h1>
+<h4>Ingresa el radio</h4>
+<input type="text" id="radio" class="form-control espacioinput">
+<button id="calCircle" class="btn btn-primary" onclick="calculosCirculo()">Calcular</button>
+<h4>El diametro es :</h4>
+<input type="text" id="diametro" class="form-control">
+<h4>La circunferencia es :</h4>
+<input type="text" id="circunferencia" class="form-control">
+<h4>EL area es :</h4>
+<input type="text" id="area" class="form-control espacioinput">
+
+<h1 class="centro">Validar numero</h1>
+<h4>Ingresa numero</h4>
+<input type="text" id="numero" class="form-control espacioinput">
+<button id="calCircle" class="btn btn-primary" onclick="validarNumero()">Validar</button>
+<h4>El numero es :</h4>
+<input type="text" id="number" class="form-control">
+
+<h1 class="centro">Validar año bisiesto</h1>
+<h4>Ingresa año</h4>
+<input type="text" id="anio" class="form-control espacioinput">
+<button class="btn btn-primary" onclick="validarAnio()">Validar</button>
+<h4>El año es :</h4>
+<input type="text" id="resultAnio" class="form-control">
+
+<h1 class="centro">Numero primo</h1>
+<h4>Ingresa numero</h4>
+<input type="text" id="numPrimo" class="form-control espacioinput">
+<button class="btn btn-primary" onclick="numeroPrimo()">Validar</button>
+<h4>Resultado:</h4>
+<input type="text" id="resPrimo" class="form-control">
+
+<h1>Convertir fecha a numero</h1>
+<h4>Ingresa fecha</h4>
+<input type="text" id="conFecha" class="form-control espacioinput">
+<button class="btn btn-primary" onclick="convertirFecha()">Convertir</button>
+<h4>Resultado:</h4>
+<input type="text" id="resFecha" class="form-control">
+
+
+	</div>
+
+<script src="index.js"></script>
+</body>
+</html>
